@@ -1,0 +1,60 @@
+#:schema https://raw.githubusercontent.com/YunoHost/apps/master/schemas/manifest.v2.schema.json
+
+packaging_format = 2
+
+id = "scratch"
+name = "Scratch"
+description.en = "Programming language to create your own interactive stories, games, and animations"
+description.fr = "Langage de programmation pour créer vos propres histoires, jeux et animations interactifs"
+
+version = "5.1.77~ynh1"
+
+maintainers = []
+
+[upstream]
+license = "BSD-3-Clause"
+website = "https://scratch.mit.edu/"
+demo = "https://scratch.mit.edu/projects/editor/?tutorial=getStarted"
+admindoc = "https://scratch-wiki.info/wiki/Scratch_3.0"
+code = "https://github.com/scratchfoundation/scratch-gui"
+
+[integration]
+
+yunohost = ">= 12.0.9"
+helpers_version = "2.1"
+architectures = "all"
+multi_instance = true
+
+ldap = false
+
+sso = false
+
+disk = "50M"
+ram.build = "50M"
+ram.runtime = "50M"
+
+[install]
+    [install.domain]
+    type = "domain"
+
+    [install.path]
+    type = "path"
+    default = "/scratch"
+
+    [install.init_main_permission]
+    type = "group"
+    default = "visitors"
+
+[resources]
+    [resources.sources.main]
+    url = "https://github.com/scratchfoundation/scratch-gui/archive/refs/tags/v5.1.77.tar.gz"
+    sha256 = "b7bc29778c0152e53ad617992a10e9344929a8231e2740b3569dcf693768a2ea"
+    autoupdate.strategy = "latest_github_tag"
+
+    [resources.system_user]
+
+    [resources.install_dir]
+    group = "www-data:r-x"
+
+    [resources.permissions]
+    main.url = "/"

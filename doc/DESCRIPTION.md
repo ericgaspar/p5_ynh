@@ -1,0 +1,1 @@
+Scratch is a graphical programming language that can be manipulated and executed by the educational software of the same name. Scratch is both a development environment and an execution engine for the Scratch language, as well as a website.
