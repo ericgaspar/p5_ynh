@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "p5"
 name = "p5.js"
-description.en = "The p5.js Editor is a website for creating p5.js sketches"
-description.fr = "Langage de programmation pour créer vos propres histoires, jeux et animations interactifs"
+description.en = "p5.js Editor is a website for creating p5.js sketches"
+description.fr = "p5.js Editor est un site Web pour créer des croquis p5.js"
 
 version = "2.16.7~ynh1"
 
@@ -35,10 +35,6 @@ ram.runtime = "50M"
 [install]
     [install.domain]
     type = "domain"
-
-    [install.path]
-    type = "path"
-    default = "/p5"
 
     [install.init_main_permission]
     type = "group"
