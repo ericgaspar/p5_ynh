@@ -1,1 +1,1 @@
-Scratch is a graphical programming language that can be manipulated and executed by the educational software of the same name. Scratch is both a development environment and an execution engine for the Scratch language, as well as a website.
+The p5.js Editor is a website for creating p5.js sketches, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! You can create, share, or remix p5.js sketches without needing to download or configure anything.
